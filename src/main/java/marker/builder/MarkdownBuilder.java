@@ -1,9 +1,8 @@
 package marker.builder;
 
-import marker.core.Header;
-import marker.core.Image;
-import marker.core.MarkdownElement;
-import marker.core.Text;
+import marker.core.*;
+
+import java.util.List;
 
 public class MarkdownBuilder {
 
@@ -34,6 +33,16 @@ public class MarkdownBuilder {
         return add(new Image(text, url));
     }
 
+    public MarkdownBuilder addQuote(String content) {
+        return add(new Quote(content));
+    }
+
+    public MarkdownBuilder addList(List<Object> objects) {
+        return add(new UnorderedList(objects));
+    }
+
+
+    @Override
     public String toString() {
         return markdown.toString();
     }
