@@ -41,6 +41,14 @@ public class MarkdownBuilder {
         return add(new UnorderedList(objects));
     }
 
+    public MarkdownBuilder addTable(Table table) {
+        return add(table);
+    }
+
+    public MarkdownBuilder addLink(String text, String url) {
+        return add(new Link(text, url));
+    }
+
 
     @Override
     public String toString() {
