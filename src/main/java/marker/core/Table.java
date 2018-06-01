@@ -55,9 +55,7 @@ public class Table implements MarkdownElement {
         for (int index = 0; index < rows.size(); index++) {
             markdown.append(rows.get(index)).append(System.lineSeparator());
             if (index == 0) {
-                if (alignments.size() > 0) {
-                    markdown.append(createRow(alignments)).append(System.lineSeparator());
-                } else {
+                if (alignments.size() == 0) {
                     int cols = rows.get(0).split("\\|").length;
                     for (int i = 0; i < cols; i++) {
                         alignments.add(ALIGN_LEFT);
