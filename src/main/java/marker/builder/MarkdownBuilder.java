@@ -33,6 +33,10 @@ public class MarkdownBuilder {
         return add(new Image(text, url));
     }
 
+    public MarkdownBuilder addImage(String text, String url, int align) {
+        return add(new Image(text, url, align));
+    }
+
     public MarkdownBuilder addQuote(String content) {
         return add(new Quote(content));
     }
