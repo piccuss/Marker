@@ -1,5 +1,6 @@
 # Marker 
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b587b508b7604b8385dd3c3a337c7572)](https://app.codacy.com/app/piccus/Marker?utm_source=github.com&utm_medium=referral&utm_content=piccuss/Marker&utm_campaign=badger)
 [![Build Status](https://travis-ci.com/piccuss/Marker.svg?branch=master)](https://travis-ci.com/piccuss/Marker) [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.piccuss/marker/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.piccuss/marker) 
 
 Build markdown by java.The following tags are supported.
